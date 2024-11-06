@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetRanker - Share and Rate Pet Photos</title>
+    <title>PetRanker - Pet Photo Competition Platform</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,115 +11,136 @@
             margin: 0;
             padding: 0;
             color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #4a90e2, #63b3ed);
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
+            background-color: #f9fafb;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        header {
+            background: #ffffff;
+            padding: 30px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .subtitle {
+        .app-title {
+            font-size: 2.5em;
+            color: #2d3748;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .app-subtitle {
             font-size: 1.2em;
+            color: #4a5568;
+            text-align: center;
             margin-bottom: 30px;
         }
-        .cta-buttons {
+        .section {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2d3748;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 15px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "•";
+            color: #4299e1;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .data-usage {
+            background: #ebf8ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .important-links {
+            text-align: center;
             margin: 30px 0;
         }
-        .button {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            background-color: #4CAF50;
-            color: white;
+        .important-links a {
+            color: #4299e1;
+            margin: 0 15px;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            font-weight: 500;
         }
-        .button.secondary {
-            background-color: transparent;
-            border: 2px solid white;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        .feature-card {
-            text-align: center;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 10px;
-        }
-        footer {
-            background: #2d3748;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-        }
-        footer a {
-            color: white;
+        .important-links a:hover {
             text-decoration: underline;
         }
-        .app-preview {
-            max-width: 300px;
-            margin: 30px auto;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #718096;
+            border-top: 1px solid #edf2f7;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>PetRanker</h1>
-            <p class="subtitle">Share, Vote, and Celebrate Your Pets</p>
-            <div class="cta-buttons">
-                <a href="#download" class="button">Download Now</a>
-                <a href="privacy.html" class="button secondary">Privacy Policy</a>
-            </div>
+            <h1 class="app-title">PetRanker</h1>
+            <p class="app-subtitle">A Social Platform for Pet Photo Competitions and Rankings</p>
         </div>
     </header>
 
     <main class="container">
-        <section class="features">
-            <div class="feature-card">
-                <h3>Share Your Pets</h3>
-                <p>Upload photos of your beloved pets and share them with our community.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Vote & Compare</h3>
-                <p>Participate in fun, friendly competitions and vote for your favorite pets.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Track Rankings</h3>
-                <p>See how your pets rank and climb the leaderboards.</p>
+        <section class="section">
+            <h2>About PetRanker</h2>
+            <p>PetRanker is a mobile application designed for pet owners to share photos of their pets, participate in friendly competitions, and engage with a community of pet enthusiasts. Our platform provides a safe, engaging environment for showcasing your beloved pets and discovering other amazing pets in the community.</p>
+        </section>
+
+        <section class="section">
+            <h2>App Functionality</h2>
+            <ul class="feature-list">
+                <li><strong>Photo Sharing:</strong> Upload and share photos of your pets securely</li>
+                <li><strong>Competition System:</strong> Participate in head-to-head pet photo competitions</li>
+                <li><strong>Voting Mechanism:</strong> Vote for your favorite pets in various matchups</li>
+                <li><strong>Profile Management:</strong> Create and manage your pet's profile</li>
+                <li><strong>Leaderboards:</strong> Track rankings and performance statistics</li>
+                <li><strong>Social Features:</strong> Connect with other pet owners and enthusiasts</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Data Usage Transparency</h2>
+            <div class="data-usage">
+                <p><strong>We collect and use the following data to provide our services:</strong></p>
+                <ul class="feature-list">
+                    <li><strong>Account Information:</strong> Email address and basic profile details for account creation and management</li>
+                    <li><strong>Authentication Data:</strong> Information from social login providers (Google, Facebook, Apple) when you choose to use these services</li>
+                    <li><strong>User Content:</strong> Pet photos and descriptions that you choose to share</li>
+                    <li><strong>Usage Data:</strong> Basic interaction data to improve the app experience</li>
+                </ul>
+                <p>All data collection is done with user consent and in accordance with our privacy policy. We prioritize user privacy and data security in all our operations.</p>
             </div>
         </section>
 
-        <section class="download" id="download">
-            <h2>Download PetRanker</h2>
-            <p>Coming soon to the App Store!</p>
-        </section>
+        <div class="important-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:sonderistic95@gmail.com">Contact Us</a>
+        </div>
     </main>
 
     <footer>
         <div class="container">
             <p>© 2024 PetRanker. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> |
-                <a href="mailto:sonderistic95@gmail.com">Contact Us</a>
-            </p>
         </div>
     </footer>
 </body>
